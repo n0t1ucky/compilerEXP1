@@ -16,10 +16,17 @@ void Widget::init()
     ui->checkBox->setDisabled(true);
     ui->codeView->setDisabled(true);
     //链接信号和槽
+    connect(ui->openFileBtn,&QPushButton::clicked,this,&Widget::unlockBtn);
 }
 bool Widget::selectSourseFile()
 {
     return true;
+}
+void Widget::unlockBtn()
+{
+    ui->saveBtn->setDisabled(false);
+    ui->checkBox->setDisabled(false);
+    ui->codeView->setDisabled(false);
 }
 
 Widget::~Widget()

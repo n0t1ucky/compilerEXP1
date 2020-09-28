@@ -18,6 +18,7 @@ public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
     void init();
+    void unlockBtn();
     bool selectSourseFile();
     bool saveSourseFile();
     void scanSourseFile();
