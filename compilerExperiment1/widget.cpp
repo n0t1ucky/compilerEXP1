@@ -15,6 +15,7 @@ void Widget::init()
     ui->saveBtn->setDisabled(true);
     ui->checkBox->setDisabled(true);
     ui->codeView->setDisabled(true);
+    //链接信号和槽
 }
 bool Widget::selectSourseFile()
 {
